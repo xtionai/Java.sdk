@@ -3,16 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.joutaojian</groupId>
+	<groupId>com.github.xtionai</groupId>
 	<artifactId>ai-java-sdk</artifactId>
 	<version>1.2.3</version>
 	<packaging>jar</packaging>
 
 	<name>ai-java-sdk</name>
 	<description>ai-java-sdk</description>
-	<url>https://github.com/joutaojian/ai-java-sdk</url>
+	<url>https://github.com/xtionai/Java.sdk</url>
 
 	<properties>
+		<additionalparam>-Xdoclint:none</additionalparam>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -77,6 +78,7 @@
 		<profile>
 			<id>release</id>
 			<build>
+				<pluginManagement>
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -130,14 +132,15 @@
 						</executions>
 					</plugin>
 				</plugins>
+				</pluginManagement>
 			</build>
 			<distributionManagement>
 				<snapshotRepository>
-					<id>ossrh</id>
+					<id>oss</id>
 					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 				</snapshotRepository>
 				<repository>
-					<id>ossrh</id>
+					<id>oss</id>
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
@@ -152,15 +155,15 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/joutaojian/ai-java-sdk</url>
-		<connection>https://github.com/joutaojian/ai-java-sdk.git</connection>
-		<developerConnection>https://github.com/joutaojian</developerConnection>
+		<url>https://github.com/xtionai/Java.sdk</url>
+		<connection>https://github.com/xtionai/Java.sdk.git</connection>
+		<developerConnection>https://github.com/xtionai</developerConnection>
 	</scm>
 	<developers>
 		<developer>
-			<name>taojian</name>
-			<email>jou_taojian@163.com</email>
-			<url>https://github.com/joutaojian</url>
+			<name>xuanwu</name>
+			<email>lizongxian@wxchina</email>
+			<url>https://github.com/xtionai</url>
 		</developer>
 	</developers>
 
