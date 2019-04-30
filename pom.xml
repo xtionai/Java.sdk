@@ -13,7 +13,6 @@
 	<url>https://github.com/xtionai/Java.sdk</url>
 
 	<properties>
-		<additionalparam>-Xdoclint:none</additionalparam>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -144,6 +143,9 @@
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
+			<properties>
+				<additionalparam>-Xdoclint:none</additionalparam>
+			</properties>
 		</profile>
 	</profiles>
 
@@ -159,6 +161,7 @@
 		<connection>https://github.com/xtionai/Java.sdk.git</connection>
 		<developerConnection>https://github.com/xtionai</developerConnection>
 	</scm>
+
 	<developers>
 		<developer>
 			<name>xuanwu</name>
