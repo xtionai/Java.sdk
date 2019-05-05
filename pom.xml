@@ -5,7 +5,7 @@
 
 	<groupId>com.github.xtionai</groupId>
 	<artifactId>ai-java-sdk</artifactId>
-	<version>1.2.3</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>ai-java-sdk</name>
@@ -135,17 +135,14 @@
 			</build>
 			<distributionManagement>
 				<snapshotRepository>
-					<id>oss</id>
+					<id>ossrh</id>
 					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 				</snapshotRepository>
 				<repository>
-					<id>oss</id>
+					<id>ossrh</id>
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
-			<properties>
-				<additionalparam>-Xdoclint:none</additionalparam>
-			</properties>
 		</profile>
 	</profiles>
 
@@ -164,7 +161,7 @@
 
 	<developers>
 		<developer>
-			<name>xuanwu</name>
+			<name>xtion</name>
 			<email>lizongxian@wxchina</email>
 			<url>https://github.com/xtionai</url>
 		</developer>
